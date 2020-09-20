@@ -2,3 +2,4 @@
 .DS_Store
 *.xcuserstate
 /.swiftpm/xcode/xcuserdata
+/.swiftpm/xcode/package.xcworkspace/xcuserdata

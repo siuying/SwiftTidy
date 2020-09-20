@@ -15,7 +15,7 @@ static:
 	# build ios simulator
 	cmake --build _builds --config Release --target tidy-static -- -sdk iphonesimulator 
 	# copy custom module map
-	cp ../../module.modulemap include
+	cp ../module.modulemap include
 	# create xcframework
 	xcodebuild -create-xcframework \
 		-library _builds/Release-iphoneos/libtidys.a \
