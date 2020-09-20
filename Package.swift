@@ -12,7 +12,7 @@ let package = Package(
         .target(name: "SwiftTidy", dependencies: ["CTidy"]),
         .binaryTarget(
             name: "CTidy",
-            path: "vendor/tidy-html5/Tidy.xcframework"
+            path: "vendor/Tidy.xcframework"
         ),
         .testTarget(name: "SwiftTidyTests", dependencies: ["SwiftTidy"]),
     ]

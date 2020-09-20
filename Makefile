@@ -24,4 +24,4 @@ static:
 		-headers include \
 		-library build/cmake/libtidys.a \
 		-headers include \
-		-output Tidy.xcframework
+		-output ../Tidy.xcframework
