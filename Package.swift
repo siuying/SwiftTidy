@@ -8,13 +8,12 @@ let package = Package(
     products: [
         .library(name: "SwiftTidy", targets: ["SwiftTidy"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
         .target(name: "SwiftTidy", dependencies: ["CTidy"]),
-        .target(name: "CTidy", dependencies: []),
+        .binaryTarget(
+            name: "CTidy",
+            path: "vendor/tidy-html5/Tidy.xcframework"
+        ),
         .testTarget(name: "SwiftTidyTests", dependencies: ["SwiftTidy"]),
     ]
 )
