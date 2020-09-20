@@ -1,3 +1,4 @@
 module CTidy {
   header "tidy.h"
+  header "tidybuffio.h"
 }
